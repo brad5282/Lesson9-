@@ -239,7 +239,7 @@ public class ShapeGUI extends javax.swing.JFrame {
             double y = Double.parseDouble(JOptionPane.showInputDialog(this, "Enter new y", "0"));
             erase();
             s.move(x, y);
-            p.setColor(Color.red);//red for testing
+            p.setColor(Color.blue);
             s.draw(p);
             txtinfo.setText(s.toString());
         

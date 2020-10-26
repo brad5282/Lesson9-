@@ -58,14 +58,14 @@ public class Triangle extends Shape {
     }
     
     public void move(double xLoc, double yLoc){
-        xPos = xLoc;
-        yPos = yLoc;
         double changex = xLoc - xPos;
         double changey = yLoc - yPos;
-        x2 -= changex;
-        x3 -= changex;
-        y2 -= changey;
-        y3 -= changey;
+        xPos = xLoc;
+        yPos = yLoc;
+        x2 += changex;
+        x3 += changex;
+        y2 += changey;
+        y3 += changey;
     }
     
     @Override
