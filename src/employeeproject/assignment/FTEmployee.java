@@ -5,16 +5,17 @@ public class FTEmployee extends Employee {
 
     public FTEmployee(){
         super();
+       
     }
-    
-    //complete get pay
-    
+
     @Override
     public double getPay() {
-        //update totalPay
-        //over 40 hrs is double the rate 
-        totalPay+= 1; // change later
-        return 0;
+        if(hours > 40){
+            totalPay += ((hours-40) *(rate*2)) + (40 * rate);
+        return totalPay;
+        }
+        totalPay+= rate*hours; // change later
+        return totalPay;
     }
     
 }

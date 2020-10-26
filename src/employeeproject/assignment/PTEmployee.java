@@ -3,10 +3,14 @@ package employeeproject.assignment;
 
 
 public class PTEmployee extends Employee {
+    public PTEmployee(){
+        super();
+    }
 
     @Override
     public double getPay() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        totalPay+= rate*hours;//adding to TotalPay
+        return hours * rate;
     }
     
 }
